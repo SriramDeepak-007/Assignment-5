@@ -8,14 +8,14 @@
 
 #Dictonary of student_marks with student name as key and marks as values
 student_marks = {
-    "Peter": 85,
-    "Jean": 90,
-    "Mary": 78,
-    "Ned": 92,
-    "Frank": 88
+    "peter": 85,
+    "jean": 90,
+    "mary": 78,
+    "ned": 92,
+    "frank": 88
 }
 # Ask the user for input
-name = input("Enter the student's name: ")
+name = input("Enter the student's name: ").lower()
 
 if name in student_marks:
         print(f"{name}'s marks: {student_marks[name]}")
