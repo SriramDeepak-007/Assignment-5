@@ -2,34 +2,23 @@
 1.   Creates a dictionary where student names are keys and their marks are values.
 2.   Asks the user to input a student's name.
 3.   Retrieves and displays the corresponding marks.
-4.   If the student’s name is not found, display an appropriate message.
+4.   If the student's name is not found, display an appropriate message.
 """
 
 
-
-
-import re
-
-# Dictionary to store student marks
+#Dictonary of student_marks with student name as key and marks as values
 student_marks = {
-    "Punisher": 85,
-    "Michelle": 92,
-    "Gwen": 95,
-    "Ned": 88,
-    "Peter": 90
-
+    "Peter": 85,
+    "Jean": 90,
+    "Mary": 78,
+    "Ned": 92,
+    "Frank": 88
 }
-
-# Ask the user to input a student's name
+# Ask the user for input
 name = input("Enter the student's name: ")
 
-found = False
-# Search for the student's name in the dictionary (case-insensitive)
-for student in student_marks:
-    if re.search("^" + name + "$", student, re.IGNORECASE):
-        print(f"{student}'s marks: {student_marks[student]}")
-        found = True
-        break
-#if the student's name is not found, display an appropriate message
-if not found:
-    print("Student not found.")
+if name in student_marks:
+        print(f"{name}'s marks: {student_marks[name]}")
+else:
+
+  print("Student not found.")
