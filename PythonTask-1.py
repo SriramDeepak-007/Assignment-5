@@ -15,13 +15,12 @@ student_marks = {
     "ned": 92,
     "frank": 88
 }
-<<<<<<< HEAD
 
 name = input("Enter the student's name: ")
-=======
+
 # Ask the user for input
 name = input("Enter the student's name: ").lower()
->>>>>>> b944693b0879ffee7c33dfbea00f13e19b925359
+
 
 if name in student_marks:
     name == student_marks[name]
