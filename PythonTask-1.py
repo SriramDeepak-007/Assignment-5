@@ -9,14 +9,19 @@ Problem Statement: Write a Python program that:
 
 #Dictonary of student_marks with student name as key and marks as values
 student_marks = {
-    "Peter": 85,
-    "Jean": 90,
-    "Mary": 78,
-    "Ned": 92,
-    "Frank": 88
+    "peter": 85,
+    "jean": 90,
+    "mary": 78,
+    "ned": 92,
+    "frank": 88
 }
+<<<<<<< HEAD
 
 name = input("Enter the student's name: ")
+=======
+# Ask the user for input
+name = input("Enter the student's name: ").lower()
+>>>>>>> b944693b0879ffee7c33dfbea00f13e19b925359
 
 if name in student_marks:
     name == student_marks[name]
