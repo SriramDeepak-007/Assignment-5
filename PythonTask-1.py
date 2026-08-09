@@ -1,4 +1,5 @@
-"""Problem Statement: Write a Python program that:
+"""
+Problem Statement: Write a Python program that:
 1.   Creates a dictionary where student names are keys and their marks are values.
 2.   Asks the user to input a student's name.
 3.   Retrieves and displays the corresponding marks.
@@ -14,11 +15,12 @@ student_marks = {
     "Ned": 92,
     "Frank": 88
 }
-# Ask the user for input
+
 name = input("Enter the student's name: ")
 
 if name in student_marks:
-        print(f"{name}'s marks: {student_marks[name]}")
-else:
+    name == student_marks[name]
+    print(f"{name}'s marks: {student_marks[name]}")
 
-  print("Student not found.")
+else:
+    print("Student not found. Try Again")
